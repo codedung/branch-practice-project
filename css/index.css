@@ -15,7 +15,7 @@ button {cursor:pointer; background:none; border:0;}
 a {text-decoration:none; color:#000;}
 /* part1 */
 /* nav */
-header { position: relative;}
+header { position: relative; z-index: 9999;}
 .header-wrap {display: flex; flex-flow: column; justify-content: space-around; width:1250px; height: 140px; margin: 0 auto;}
 .header-top {display: flex; flex-flow:row; justify-content:flex-end;}
 .header-top .cal-btn {margin-left: 2em;}
@@ -34,12 +34,15 @@ header { position: relative;}
 .nav-list-wrap.off {display: none;}
 .nav-list-wrap.on {display: block;}
 .nav-list-deps1 {display: flex; width: 1250px; margin: 0 auto; justify-content: space-between; height: 400px;}
+.nav-list-deps1.off {display: none;}
+.nav-list-deps1.on {display: flex;}
 .nav-list-deps1 > li {padding:2em; position: relative; width: 20%; height: 100%;}
 .nav-list-deps1 > li:hover {background: #e9f7f7;}
 .nav-list-deps1 > li::after {content:''; display: block; width: 1px; height: 100%; background:#ddd; position: absolute; right: 0; top:0}
 .nav-list-deps1 > li:first-child::before {content:''; display: block; width: 1px; height: 100%; background:#ddd; position: absolute; left: 0; top:0}
 .nav-list-title {display:block; font-size:0.9em; color:#444; font-weight: bold; margin-bottom: 1em;}
 .nav-list-title:hover {text-decoration: underline;}
+.nav-list-title.divid-title {margin-top:2em}
 .nav-list-deps2 {display: flex; flex-flow: column;}
 .nav-list-deps2 li a{display: block; font-size:0.8em; padding: 0.5em 0;}
 .nav-list-deps2 li a:hover {color:#009591; text-decoration: underline;}
