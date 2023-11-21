@@ -884,6 +884,19 @@ footer > .footer-width > main > .company-info > p {
   color: #555;
 }
 
+footer > .footer-width > main > .company-info > p > span {
+  position: relative;
+  margin: 0 10px;
+}
+
+footer > .footer-width > main > .company-info > p > span:after {
+  content: '|';
+  position: absolute;
+  top: 25%;
+  right: 0px;
+  font-size: 8px;
+}
+
 footer > .footer-width > main > .social {
   flex: 1;
   display: flex;
