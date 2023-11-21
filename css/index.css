@@ -478,3 +478,11 @@ span {
   letter-spacing: 0.12rem;
   margin: 0 5px;
 }
+
+footer {
+  width: 100% !important;
+  display: block;
+  margin-top: 77px;
+  height: 245px;
+  background-color: #f9f9fb;
+}
