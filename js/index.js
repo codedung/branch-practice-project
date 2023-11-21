@@ -1,47 +1,57 @@
-window.addEventListener('load',()=>{
+window.addEventListener('load', () => {
   const topMenu = document.querySelectorAll('nav > ul > li');
   const navBg = document.querySelector('.nav-bg');
 
   listTwoTitle();
 
-  topMenu.forEach((el,i)=>{
-    el.addEventListener('mouseover',()=>{
+  topMenu.forEach((el, i) => {
+    el.addEventListener('mouseover', () => {
       const target = el.getElementsByClassName('nav-list-deps1');
       listReset();
-      navBg.classList.add('on')
+      navBg.classList.add('on');
       target[0].classList.add('on');
-    })
-    el.addEventListener('mouseleave',()=>{
+    });
+    el.addEventListener('mouseleave', () => {
       listReset();
-      navBg.classList.remove('on')
-    })
-  })
+      navBg.classList.remove('on');
+    });
+  });
 
-})
+  // footer navigation bar 클릭 이벤트 추가 - 이성은
+  const footerClickLi = document.querySelectorAll('.toggle');
 
-function listReset(){
+  footerClickLi.forEach((li) => {
+    li.addEventListener('click', () => {
+      li.classList.toggle('active');
+      const targetUl = li.getElementsByTagName('ul')[0];
+      targetUl.classList.toggle('active');
+    });
+  });
+  // footer navigation bar 클릭 이벤트 추가 - 이성은
+});
+
+function listReset() {
   const topMenu = document.querySelectorAll('nav > ul > li');
-  for(let i = 0; i< topMenu.length; i++){
-    topMenu[i].lastElementChild.classList.remove('on')
+  for (let i = 0; i < topMenu.length; i++) {
+    topMenu[i].lastElementChild.classList.remove('on');
   }
 }
 
-function listTwoTitle(){
+function listTwoTitle() {
   //li안에 자식이 2개 이상이면 3번째 자식에게 class명 추가
   const topMenu = document.querySelectorAll('nav > ul > li');
-  topMenu.forEach((el,i)=>{
-    const midMenu = el.children[1].children
-    for(let j=0; j<midMenu.length; j++){
-      console.log(midMenu[j].children)
-      if(midMenu[j].children.length > 2){
-        console.log((midMenu[j].children[2]))
-        midMenu[j].children[2].classList.add('divid-title')
+  topMenu.forEach((el, i) => {
+    const midMenu = el.children[1].children;
+    for (let j = 0; j < midMenu.length; j++) {
+      console.log(midMenu[j].children);
+      if (midMenu[j].children.length > 2) {
+        console.log(midMenu[j].children[2]);
+        midMenu[j].children[2].classList.add('divid-title');
       }
     }
-  })
-  for(let i = 0; i<topMenu.length; i++){
-    if(topMenu[0].children.length > 2){
-
+  });
+  for (let i = 0; i < topMenu.length; i++) {
+    if (topMenu[0].children.length > 2) {
     }
   }
 }
