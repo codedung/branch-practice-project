@@ -12,8 +12,11 @@
 }
 
 #wrap {
-  max-width: 1250px;
   height: fit-content;
+}
+
+#wrap section {
+  max-width: 1250px;
   display: flex;
   flex-direction: column;
   margin: auto;
