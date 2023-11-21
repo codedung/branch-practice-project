@@ -1,16 +1,71 @@
+/* link */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* reset */
+* {box-sizing: border-box;}
+body, html {margin:0; padding:0; font-family: 'roboto', 'Noto Sans KR', sans-serif;}
+h1,h2,h3,h4,h5,h6,div,header,footer,main,section,aside,nav,article,p,a,ul,ol,li,span,em,strong,q,blockquote,s,del,sup,sub,form,input,fieldset,legend,select,option,button,address,table,thead,tbody,tfoot,tr,th,td,img,video,dl,dt,dd {
+  margin :0; padding:0;
+  line-height: 1;
+  font-size:1.0em; font-style: normal; font-weight: normal;
+}
+table,tr,td,th {border-collapse:collapse; text-align:left;}
+fieldset, input {border:0;}
+ul,ol,li {list-style:none;}
+button {cursor:pointer; background:none; border:0;}
+a {text-decoration:none; color:#000;}
+
 :root {
   --main-color: #009591;
   --main-box-shadow: 1px 1px 12px 0px rgb(0 0 0 / 8%);
   --main-letter-space: -0.08em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'roboto';
-}
+/* part1 */
+/* nav */
+header { position: relative; z-index: 9999;}
+.header-wrap {display: flex; flex-flow: column; justify-content: space-between; width:1250px; height: 140px; margin: 0 auto;}
+.header-top {display: flex; flex-flow:row; justify-content:flex-end;}
+.header-top .cal-btn {margin-left: 2em;}
+.header-top ul {display: flex;}
+.header-top ul li {margin-left : 1em; position: relative; display: flex; align-items: center;}
+.header-top ul li::before {content:''; display: block; width: 1px; height: 50%; background: #333; position: absolute; left: -0.5em; top:50%; transform: translateY(-50%);}
+.header-top ul li:first-child::before {display: none;}
+.header-top ul li a {font-size: 0.8em; color:#444}
+.header-btm {display: flex; justify-content: space-between;}
+.header-btm .nav-wrap {display: flex; align-items: center;}
+.header-btm .nav-wrap nav > ul { display:flex;}
+.header-btm .nav-wrap nav > ul > li > a {display: block; font-size:1.3em; font-weight: 500; text-align: center; padding:1em}
+.header-btm .nav-wrap > div {margin-left: 2em;}
+.header-btm .nav-wrap > div > img {width: 100%;}
+.header-btm .nav-bg {background: #f0f0f0;border-bottom: 2px solid #009591; width: 100%; position: absolute; left: 0; top:140px; height: 403px; z-index: 0;}
+.header-btm .nav-bg.off {display: none;}
+.header-btm .nav-bg.on {display: block;}
+.nav-list-deps1 {display: flex; width: 1250px; margin: 0 auto; justify-content: space-between; height: 401px; position: absolute; left: 50%; top:140px; transform: translateX(-50%); z-index: 10;padding-top: 1px;}
+.nav-list-deps1.off {display: none;}
+.nav-list-deps1.on {display: flex;}
+.nav-list-deps1 > li {padding:2em; position: relative; width: 20%; height: 100%; background: f0f0f0; transition: background 0.2s;}
+.nav-list-deps1 > li:hover {background: #e9f7f7;}
+.nav-list-deps1 > li::after {content:''; display: block; width: 1px; height: 100%; background:#ddd; position: absolute; right: 0; top:0}
+.nav-list-deps1 > li:first-child::before {content:''; display: block; width: 1px; height: 100%; background:#ddd; position: absolute; left: 0; top:0; z-index: 10;}
+.nav-list-title {display:block; font-size:0.9em; color:#444; font-weight: bold; margin-bottom: 1em;}
+.nav-list-title:hover {text-decoration: underline;}
+.nav-list-title.divid-title {margin-top:2em}
+.nav-list-deps2 {display: flex; flex-flow: column;}
+.nav-list-deps2 li a{display: block; font-size:0.8em; padding: 0.5em 0;}
+.nav-list-deps2 li a:hover {color:#009591; text-decoration: underline;}
 
+/* visual */
+.section {width: 1250px; margin:0  auto;;}
+.visual-wrap {position: relative; padding: 1em 0;}
+.visual-wrap a {display: block; width: 171px; height: 44px; text-indent:-99999px; position: absolute; bottom:11.9em; border-radius:50px}
+.new-btn {left:10.1em}
+.renew-btn {left:21.5em}
+
+/* #e9f7f7 #009591*/
+
+
+
+/* part3 */
 #wrap {
   height: fit-content;
 }
@@ -128,7 +183,7 @@
   justify-content: space-between;
 }
 
-#wrap
+#wrap 
   #event-contact
   .consult-insurance-info
   .consult-detail
