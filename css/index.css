@@ -978,6 +978,35 @@ span {
   vertical-align: middle;
   text-decoration: none;
 }
+.notice-recruit {
+  display: flex;
+  justify-content: space-between;
+}
+.notice-recruit .notice-box,
+.notice-recruit .recruit-box {
+  display: flex;
+  width: 49%;
+  height: 60px;
+  min-width: 500px;
+  /* justify-content: space-between; */
+}
+.notice-recruit .head {
+  width: 20%;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: #333;
+}
+.notice-recruit .content {
+  width: 60%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.notice-recruit .plus {
+  color: #009591;
+  text-align: end;
+  width: 20%;
+}
 
 footer {
   display: flex;
