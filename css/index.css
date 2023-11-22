@@ -1,5 +1,5 @@
 /* link */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* reset */
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: 'roboto', 'Noto Sans KR', sans-serif;
+  font-family: "roboto", "Noto Sans KR", sans-serif;
 }
 h1,
 h2,
@@ -129,7 +129,7 @@ header {
   align-items: center;
 }
 .header-top ul li::before {
-  content: '';
+  content: "";
   display: block;
   width: 1px;
   height: 50%;
@@ -217,7 +217,7 @@ header {
   background: #e9f7f7;
 }
 .nav-list-deps1 > li::after {
-  content: '';
+  content: "";
   display: block;
   width: 1px;
   height: 100%;
@@ -227,7 +227,7 @@ header {
   top: 0;
 }
 .nav-list-deps1 > li:first-child::before {
-  content: '';
+  content: "";
   display: block;
   width: 1px;
   height: 100%;
@@ -586,7 +586,7 @@ span {
   font-weight: 700;
   line-height: 1;
   color: var(--main-color);
-  font-family: 'roboto';
+  font-family: "roboto";
   margin: 15px 0 10px 0;
 }
 
@@ -760,6 +760,115 @@ span {
   margin: 0 5px;
 }
 
+/* 즐겨찾는 메뉴 & 자주찾는 상품 공통 */
+.sub-menu-1,
+.sub-menu-2 {
+  display: block;
+  padding: 40px 60px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 12px 0px rgb(0 0 0 / 8%);
+  height: 270px;
+  margin-bottom: 50px auto;
+}
+.sub-menu-1 .head,
+.sub-menu-2 .head {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+.sub-menu-1 .title,
+.sub-menu-2 .title {
+  color: #28b2a5;
+  display: inline;
+  font-size: 20px;
+  font-weight: 500;
+}
+.sub-menu-1 .description,
+.sub-menu-2 .description {
+  display: inline;
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.sub-menu-1 ul,
+.sub-menu-2 ul {
+  width: calc(100% - 60px);
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-menu-1 ul li {
+  width: 80px;
+}
+.sub-menu-1 ul a {
+  background: url(/hana_clone/src/main_quick_ul_1.png) no-repeat left top;
+}
+.sub-menu-1 ul a,
+.sub-menu-2 ul a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -0.08em;
+  font-weight: 500;
+  padding-top: 100px;
+  word-break: keep-all; /*띄어쓰기되어있지 않은 글자 붙이기*/
+  position: relative;
+  color: #555;
+}
+.sub-menu-2 ul a:hover,
+.sub-menu-1 ul a:hover {
+  color: #009591;
+}
+.sub-menu-1 ul li:nth-child(2) a {
+  background-position-x: -80px;
+}
+.sub-menu-1 ul li:nth-child(3) a {
+  background-position-x: -160px;
+}
+.sub-menu-1 .ul li:nth-child(4) a {
+  background-position-x: -240px;
+}
+.sub-menu-1 ul li:nth-child(5) a {
+  background-position-x: -320px;
+}
+.sub-menu-1 ul li:nth-child(6) a {
+  background-position-x: -400px;
+}
+.sub-menu-1 ul li:nth-child(7) a {
+  background-position-x: -480px;
+}
+.sub-menu-1 ul li:nth-child(8) a {
+  background-position-x: -560px;
+}
+/* 자주찾는 상품 */
+.sub-menu-2 ul li {
+  width: 90px;
+  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_bg.png)
+    no-repeat left bottom 34px;
+}
+.sub-menu-2 ul li:nth-child(1) a {
+  background: url(/hana_clone/src/main_icon_01.png) no-repeat center top 15px;
+}
+.sub-menu-2 ul li:nth-child(2) a {
+  background: url(/hana_clone/src/main_icon_02.png) no-repeat center top 19px;
+}
+.sub-menu-2 ul li:nth-child(3) a {
+  background: url(/hana_clone/src/main_icon_03.png) no-repeat center top 10px;
+}
+.sub-menu-2 ul li:nth-child(4) a {
+  background: url(/hana_clone/src/main_icon_04.png) no-repeat center top 4px;
+}
+.sub-menu-2 ul li:nth-child(5) a {
+  background: url(/hana_clone/src/main_icon_05.png) no-repeat center top 6px;
+}
+.sub-menu-2 ul li:nth-child(6) a {
+  background: url(/hana_clone/src/main_icon_06.png) no-repeat center top 3px;
+}
+.sub-menu-2 ul li:nth-child(7) a {
+  background: url(/hana_clone/src/main_icon_07.png) no-repeat center top 14px;
+}
+.sub-menu-2 ul li:nth-child(8) a {
+  background: url(/hana_clone/src/main_icon_08.png) no-repeat center top 6px;
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -890,7 +999,7 @@ footer > .footer-width > main > .company-info > p > span {
 }
 
 footer > .footer-width > main > .company-info > p > span:after {
-  content: '|';
+  content: "|";
   position: absolute;
   top: 25%;
   right: 0px;
