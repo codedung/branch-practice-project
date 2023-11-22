@@ -308,7 +308,7 @@ header {
   height: 300px;
   border-radius: 32px;
   box-shadow: var(--main-box-shadow);
-  background: url(/src/main_banner_202311_AUTO.jpg);
+  background: url(../src/main_banner_202311_AUTO.jpg);
   margin: 30px 0;
   position: relative;
 }
@@ -355,7 +355,7 @@ header {
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  background: url(/src/event_arr_prev.png);
+  background: url(../src/event_arr_prev.png);
   border: none;
   cursor: pointer;
 }
@@ -367,7 +367,7 @@ header {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  background: url(/src/event_arr_next.png);
+  background: url(../src/event_arr_next.png);
   border: none;
   cursor: pointer;
 }
@@ -609,8 +609,9 @@ span {
   letter-spacing: -0.025em;
   color: #fff;
   border-radius: 10px;
-  background: var(--main-color) url(/static/resources/mo/img/main/ico_arr_w.png)
-    no-repeat right 10px center;
+  background: var(--main-color)
+    url(../static/resources/mo/img/main/ico_arr_w.png) no-repeat right 10px
+    center;
   background-size: 5px auto;
   text-align: center;
   text-decoration: none;
@@ -801,7 +802,7 @@ span {
   width: 80px;
 }
 .sub-menu-1 ul a {
-  background: url(/hana_clone/src/main_quick_ul_1.png) no-repeat left top;
+  background: url(../src/main_quick_ul_1.png) no-repeat left top;
 }
 .sub-menu-1 ul a,
 .sub-menu-2 ul a {
@@ -847,28 +848,28 @@ span {
     no-repeat left bottom 34px;
 }
 .sub-menu-2 ul li:nth-child(1) a {
-  background: url(/hana_clone/src/main_icon_01.png) no-repeat center top 15px;
+  background: url(../src/main_icon_01.png) no-repeat center top 15px;
 }
 .sub-menu-2 ul li:nth-child(2) a {
-  background: url(/hana_clone/src/main_icon_02.png) no-repeat center top 19px;
+  background: url(../src/main_icon_02.png) no-repeat center top 19px;
 }
 .sub-menu-2 ul li:nth-child(3) a {
-  background: url(/hana_clone/src/main_icon_03.png) no-repeat center top 10px;
+  background: url(../src/main_icon_03.png) no-repeat center top 10px;
 }
 .sub-menu-2 ul li:nth-child(4) a {
-  background: url(/hana_clone/src/main_icon_04.png) no-repeat center top 4px;
+  background: url(../src/main_icon_04.png) no-repeat center top 4px;
 }
 .sub-menu-2 ul li:nth-child(5) a {
-  background: url(/hana_clone/src/main_icon_05.png) no-repeat center top 6px;
+  background: url(../src/main_icon_05.png) no-repeat center top 6px;
 }
 .sub-menu-2 ul li:nth-child(6) a {
-  background: url(/hana_clone/src/main_icon_06.png) no-repeat center top 3px;
+  background: url(../src/main_icon_06.png) no-repeat center top 3px;
 }
 .sub-menu-2 ul li:nth-child(7) a {
-  background: url(/hana_clone/src/main_icon_07.png) no-repeat center top 14px;
+  background: url(../src/main_icon_07.png) no-repeat center top 14px;
 }
 .sub-menu-2 ul li:nth-child(8) a {
-  background: url(/hana_clone/src/main_icon_08.png) no-repeat center top 6px;
+  background: url(../src/main_icon_08.png) no-repeat center top 6px;
 }
 /* 3분할 박스 */
 .division-3 {
@@ -892,14 +893,13 @@ span {
 }
 .box-1 .box-left {
   border-right: 2px solid #eaeaea;
-  background: url(/hana_clone/src/main_quick_ul_3_1.png) no-repeat right 38px
-    center;
+  background: url(../src/main_quick_ul_3_1.png) no-repeat right 38px center;
   background-size: 120px 120px;
   height: 120px;
 }
 .box-1 .box-right {
   padding-left: 40px;
-  background: url(/hana_clone/src/main_quick_ul_3_2.png) no-repeat right center;
+  background: url(../src/main_quick_ul_3_2.png) no-repeat right center;
   background-size: 120px 120px;
   height: 120px;
 }
@@ -1057,7 +1057,7 @@ footer > .footer-link > ul > li:nth-child(4) {
 }
 
 footer > .footer-link > ul > .toggle {
-  background: url(/src/icon_selectDown2.png);
+  background: url(../src/icon_selectDown2.png);
   background-repeat: no-repeat;
   background-position: right;
   position: relative;
