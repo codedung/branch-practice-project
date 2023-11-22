@@ -800,8 +800,7 @@ span {
   width: 80px;
 }
 .sub-menu-1 ul a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_quick_ul_1.png?20231106)
-    no-repeat left top;
+  background: url(/hana_clone/src/main_quick_ul_1.png) no-repeat left top;
 }
 .sub-menu-1 ul a,
 .sub-menu-2 ul a {
@@ -847,36 +846,28 @@ span {
     no-repeat left bottom 34px;
 }
 .sub-menu-2 ul li:nth-child(1) a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_01.png)
-    no-repeat center top 15px;
+  background: url(/hana_clone/src/main_icon_01.png) no-repeat center top 15px;
 }
 .sub-menu-2 ul li:nth-child(2) a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_02.png)
-    no-repeat center top 19px;
+  background: url(/hana_clone/src/main_icon_02.png) no-repeat center top 19px;
 }
 .sub-menu-2 ul li:nth-child(3) a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_03.png)
-    no-repeat center top 10px;
+  background: url(/hana_clone/src/main_icon_03.png) no-repeat center top 10px;
 }
 .sub-menu-2 ul li:nth-child(4) a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_04.png)
-    no-repeat center top 4px;
+  background: url(/hana_clone/src/main_icon_04.png) no-repeat center top 4px;
 }
 .sub-menu-2 ul li:nth-child(5) a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_05.png)
-    no-repeat center top 6px;
+  background: url(/hana_clone/src/main_icon_05.png) no-repeat center top 6px;
 }
 .sub-menu-2 ul li:nth-child(6) a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_06.png)
-    no-repeat center top 3px;
+  background: url(/hana_clone/src/main_icon_06.png) no-repeat center top 3px;
 }
 .sub-menu-2 ul li:nth-child(7) a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_07.png)
-    no-repeat center top 14px;
+  background: url(/hana_clone/src/main_icon_07.png) no-repeat center top 14px;
 }
 .sub-menu-2 ul li:nth-child(8) a {
-  background: url(https://www.hanainsure.co.kr/static/resources/web/img/main/main_icon_08.png)
-    no-repeat center top 6px;
+  background: url(/hana_clone/src/main_icon_08.png) no-repeat center top 6px;
 }
 footer {
   display: flex;
